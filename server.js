@@ -1,3 +1,7 @@
+// Framework node.js / mondodb
+// Manuel Fernánez Yáñez 2013
+// Publicado bajo licencia CreativeCommons Reconocimiento – CompartirIgual (by-sa)
+
 // Globales
 
 var red, blue, reset;
