@@ -1,0 +1,18 @@
+ul#navmenu
+  li.active
+    a(href="/") home
+  |
+  if user 
+    li
+      a(href="/account") perfil
+    | 
+  if !user
+    li
+      a(href="/login") entrar
+    |  
+  if user
+    li
+      a(href="/logout") salir 
+  if !user
+    li
+      a(href="/register") registrarse 

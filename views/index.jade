@@ -1,0 +1,30 @@
+extends layout
+
+
+block header
+  div.topbar
+    include includes/header.jade
+
+block content
+  div.container
+    div.content
+      canvas#canvas
+      div#content2
+        div.page-header
+          h1 Página principal
+          p Bienvenido a #{title}
+          div.row
+            if user
+              div.span4
+                h2 Mensajes
+                a(id='sender')='Enviar un saludo ...'
+                input(type='text', name='mensaje', placeholder='Mensaje...')
+                ul(id='receiver')
+                  p Mensajes recibidos:
+          div.row
+            div.span4
+              h2 Detalle
+              if user
+                p Bienvenido, #{user}
+              else
+                p Bienvenido al sitio, anónimo.

@@ -1,0 +1,14 @@
+module.exports = {
+    fb: {
+        appId: 'PUTYOURS'
+      , appSecret: 'PUTYOURS'
+    },
+    twit: {
+        consumerKey: 'PUTYOURS'
+      , consumerSecret: 'PUTYOURS'
+    },
+    github: {
+        appId: 'PUTYOURS'
+      , appSecret: 'PUTYOURS'
+    },
+    // ...

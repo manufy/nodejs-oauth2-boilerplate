@@ -1,0 +1,21 @@
+extends layout
+
+
+block header
+	include includes/header.jade
+
+block content
+	section
+		form(method='POST', action='/login')
+			fieldset
+				legend Entrar
+				label Introduzca sus credenciales
+				if message
+					p #{message}
+				input(type='text', name='username', placeholder='Usuario…')
+				input(type='text', name='password', placeholder='Contraseña…')
+				span.help-block Introduzca sus credenciales.
+				button.btn(type='submit') Login
+	hr
+	a(href="/auth/twitter")
+		img(src="/images/sign-in-with-twitter-l.png")

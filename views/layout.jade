@@ -1,0 +1,33 @@
+!!! 5
+//if lt IE 7
+  html.no-js.ie6.oldie(lang='en')
+//if IE 7
+  html.no-js.ie7.oldie(lang='en')
+//if IE 8
+  html.no-js.ie8.oldie(lang='en') 
+//[if gt IE 8]><!
+html.no-js(lang='en')
+  //<![end if]
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    meta(name="description", content=description)
+    meta(name="author", content=author)
+    meta(name="viewport", content='width=device-width')
+    title=title
+    link(rel='stylesheet', href='/js/vendor/bootstrap/css/bootstrap-responsive.min.css')
+    link(rel='stylesheet', href='/css/humane/bigbox.css')
+    link(rel='stylesheet/less',  type="text/css", href='/css/styles.less') 
+    script(data-main="js/main.js", src='js/vendor/humane.min.js')   
+    script(data-main="js/main.js", src='js/require.js')  
+  body
+    block header
+
+    block content
+
+    block footer
+      footer
+        div.footer
+          include includes/footer.jade
+          script(defer, src='/socket.io/socket.io.js')
+         
